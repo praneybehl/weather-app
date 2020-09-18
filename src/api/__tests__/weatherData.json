@@ -1,0 +1,473 @@
+{
+	"cnt": 12,
+	"list": [
+		{
+			"coord": {
+				"lon": 151.21,
+				"lat": -33.87
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285909,
+				"sunset": 1600328866
+			},
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03n"
+				}
+			],
+			"main": {
+				"temp": 16.3,
+				"feels_like": 7.27,
+				"temp_min": 15.56,
+				"temp_max": 17,
+				"pressure": 1026,
+				"humidity": 77
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 13.9,
+				"deg": 160
+			},
+			"clouds": {
+				"all": 40
+			},
+			"dt": 1600337435,
+			"id": 2147714,
+			"name": "Sydney"
+		},
+		{
+			"coord": {
+				"lon": 144.96,
+				"lat": -37.81
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600287451,
+				"sunset": 1600330323
+			},
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03n"
+				}
+			],
+			"main": {
+				"temp": 12.47,
+				"feels_like": 7.75,
+				"temp_min": 11,
+				"temp_max": 14.44,
+				"pressure": 1027,
+				"humidity": 76
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 6.2,
+				"deg": 170
+			},
+			"clouds": {
+				"all": 40
+			},
+			"dt": 1600337436,
+			"id": 2158177,
+			"name": "Melbourne"
+		},
+		{
+			"coord": {
+				"lon": 153.03,
+				"lat": -27.47
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285406,
+				"sunset": 1600328495
+			},
+			"weather": [
+				{
+					"id": 801,
+					"main": "Clouds",
+					"description": "few clouds",
+					"icon": "02n"
+				}
+			],
+			"main": {
+				"temp": 18.72,
+				"feels_like": 20.28,
+				"temp_min": 17.78,
+				"temp_max": 20,
+				"pressure": 1025,
+				"humidity": 93
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 1.5,
+				"deg": 50
+			},
+			"clouds": {
+				"all": 20
+			},
+			"dt": 1600337440,
+			"id": 2174003,
+			"name": "Brisbane"
+		},
+		{
+			"coord": {
+				"lon": 115.83,
+				"lat": -31.93
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 28800,
+				"sunrise": 1600294371,
+				"sunset": 1600337382
+			},
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03n"
+				}
+			],
+			"main": {
+				"temp": 18.08,
+				"feels_like": 13.67,
+				"temp_min": 17.78,
+				"temp_max": 18.33,
+				"pressure": 1022,
+				"humidity": 36
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 4.1,
+				"deg": 110
+			},
+			"clouds": {
+				"all": 43
+			},
+			"dt": 1600337432,
+			"id": 2063523,
+			"name": "Perth"
+		},
+		{
+			"coord": {
+				"lon": 138.6,
+				"lat": -34.93
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 34200,
+				"sunrise": 1600288944,
+				"sunset": 1600331883
+			},
+			"weather": [
+				{
+					"id": 803,
+					"main": "Clouds",
+					"description": "broken clouds",
+					"icon": "04n"
+				}
+			],
+			"main": {
+				"temp": 16.02,
+				"feels_like": 10.76,
+				"temp_min": 12.22,
+				"temp_max": 18.33,
+				"pressure": 1018,
+				"humidity": 63
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 7.2,
+				"deg": 110
+			},
+			"clouds": {
+				"all": 75
+			},
+			"dt": 1600337433,
+			"id": 2078025,
+			"name": "Adelaide"
+		},
+		{
+			"coord": {
+				"lon": 149.13,
+				"lat": -35.28
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600286423,
+				"sunset": 1600329350
+			},
+			"weather": [
+				{
+					"id": 804,
+					"main": "Clouds",
+					"description": "overcast clouds",
+					"icon": "04n"
+				}
+			],
+			"main": {
+				"temp": 11.94,
+				"feels_like": 9.5,
+				"temp_min": 11.11,
+				"temp_max": 13.33,
+				"pressure": 1028,
+				"humidity": 81
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 3.1,
+				"deg": 110
+			},
+			"clouds": {
+				"all": 90
+			},
+			"dt": 1600337439,
+			"id": 2172517,
+			"name": "Canberra"
+		},
+		{
+			"coord": {
+				"lon": 147.33,
+				"lat": -42.88
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600286945,
+				"sunset": 1600329691
+			},
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03n"
+				}
+			],
+			"main": {
+				"temp": 5.78,
+				"feels_like": 1.54,
+				"temp_min": 4.44,
+				"temp_max": 8,
+				"pressure": 1031,
+				"humidity": 75
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 3.6,
+				"deg": 170
+			},
+			"clouds": {
+				"all": 40
+			},
+			"dt": 1600337437,
+			"id": 2163355,
+			"name": "Hobart"
+		},
+		{
+			"coord": {
+				"lon": 153.43,
+				"lat": -28
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285316,
+				"sunset": 1600328394
+			},
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03n"
+				}
+			],
+			"main": {
+				"temp": 18.14,
+				"feels_like": 19.04,
+				"temp_min": 17,
+				"temp_max": 19.44,
+				"pressure": 1025,
+				"humidity": 93
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 2.1,
+				"deg": 10
+			},
+			"clouds": {
+				"all": 40
+			},
+			"dt": 1600337435,
+			"id": 2165087,
+			"name": "Gold Coast"
+		},
+		{
+			"coord": {
+				"lon": 151.78,
+				"lat": -32.93
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285762,
+				"sunset": 1600328739
+			},
+			"weather": [
+				{
+					"id": 803,
+					"main": "Clouds",
+					"description": "broken clouds",
+					"icon": "04n"
+				}
+			],
+			"main": {
+				"temp": 18.18,
+				"feels_like": 13.37,
+				"temp_min": 17.78,
+				"temp_max": 18.89,
+				"pressure": 1024,
+				"humidity": 88
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 9.8,
+				"deg": 200
+			},
+			"clouds": {
+				"all": 75
+			},
+			"dt": 1600337436,
+			"id": 2155472,
+			"name": "Newcastle"
+		},
+		{
+			"coord": {
+				"lon": 150.88,
+				"lat": -34.43
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285994,
+				"sunset": 1600328939
+			},
+			"weather": [
+				{
+					"id": 804,
+					"main": "Clouds",
+					"description": "overcast clouds",
+					"icon": "04n"
+				}
+			],
+			"main": {
+				"temp": 15.4,
+				"feels_like": 13.47,
+				"temp_min": 15,
+				"temp_max": 16.11,
+				"pressure": 1024,
+				"humidity": 74
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 3.13,
+				"deg": 167
+			},
+			"clouds": {
+				"all": 99
+			},
+			"dt": 1600337439,
+			"id": 2171507,
+			"name": "Wollongong"
+		},
+		{
+			"coord": {
+				"lon": 153.11,
+				"lat": -27.64
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600285389,
+				"sunset": 1600328474
+			},
+			"weather": [
+				{
+					"id": 800,
+					"main": "Clear",
+					"description": "clear sky",
+					"icon": "01n"
+				}
+			],
+			"main": {
+				"temp": 18.57,
+				"feels_like": 19.32,
+				"temp_min": 17.22,
+				"temp_max": 20,
+				"pressure": 1021,
+				"humidity": 85
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 1.76,
+				"deg": 60
+			},
+			"clouds": {
+				"all": 0
+			},
+			"dt": 1600337665,
+			"id": 7281838,
+			"name": "Logan City"
+		},
+		{
+			"coord": {
+				"lon": 144.36,
+				"lat": -38.15
+			},
+			"sys": {
+				"country": "AU",
+				"timezone": 36000,
+				"sunrise": 1600287599,
+				"sunset": 1600330463
+			},
+			"weather": [
+				{
+					"id": 804,
+					"main": "Clouds",
+					"description": "overcast clouds",
+					"icon": "04n"
+				}
+			],
+			"main": {
+				"temp": 10.38,
+				"feels_like": 8.36,
+				"temp_min": 9.44,
+				"temp_max": 11,
+				"pressure": 1028,
+				"humidity": 100
+			},
+			"visibility": 10000,
+			"wind": {
+				"speed": 3.1,
+				"deg": 150
+			},
+			"clouds": {
+				"all": 99
+			},
+			"dt": 1600337438,
+			"id": 2165798,
+			"name": "Geelong"
+		}
+	]
+}
