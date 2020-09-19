@@ -1,7 +1,15 @@
 import React, { FC } from 'react';
 import ResponsiveImage from '../ResponsiveImage';
 import { getResponsiveIconSrc } from '../../utils';
-import { Subtitle, CityName, Temperature, TemperatureWrap, TileStyled } from './styles';
+import {
+	Subtitle,
+	CityName,
+	Temperature,
+	TemperatureWrap,
+	TileStyled,
+	LowHighTemp,
+	IconText
+} from './styles';
 
 export interface WeatherTileProps {
 	routeParam: number | undefined;
@@ -40,7 +48,7 @@ const WeatherTile: FC<WeatherTileProps> = ({
 						alt={iconType}
 						{...iconProps}
 					/>
-					<Subtitle>{iconType}</Subtitle>
+					<IconText>{iconType}</IconText>
 				</div>
 				<div>
 					<CityName>{cityName}</CityName>
@@ -49,9 +57,9 @@ const WeatherTile: FC<WeatherTileProps> = ({
 				<div>
 					<TemperatureWrap>
 						<Temperature aria-label="current temperature">{temperature}°</Temperature>
-						<Subtitle aria-label="today's minimum and maximum temperature">
+						<LowHighTemp aria-label="today's minimum and maximum temperature">
 							{minTemp}°/{maxTemp}°
-						</Subtitle>
+						</LowHighTemp>
 					</TemperatureWrap>
 				</div>
 			</TileStyled>

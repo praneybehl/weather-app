@@ -42,12 +42,27 @@ export const Subtitle = styled.div`
 	${({ theme }) => css`
 		color: ${theme.colors.black};
 		font-size: ${theme.fontSizes[1]};
-		padding-top: ${theme.space[2]}px;
+		padding-top: ${theme.space[3]}px;
 		${theme.mediaQueries.sm} {
+			padding-top: ${theme.space[4]}px;
 			font-size: ${({ theme }) => theme.fontSizes[2]};
 		}
 	`};
 `;
+
+export const LowHighTemp = styled(Subtitle)`
+	${({ theme }) => css`
+		padding-top: ${theme.space[1]}px;
+		${theme.mediaQueries.sm} {
+			padding-top: ${theme.space[2]}px;
+		}
+	`}
+`;
+
+export const IconText = styled(Subtitle)`
+	padding-top: 0;
+`;
+
 export const Temperature = styled.h3`
 	${({ theme }) => css`
 		color: ${theme.colors.black};
