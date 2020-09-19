@@ -201,6 +201,6 @@ specification for adding human and machine readable meaning to commit messages.
 `yarn test-all`:		Runs linting, type checks and unit tests.  
 `yarn lint`:	        Runs eslint.   
 `yarn format`:		    Runs Prettier in 'write' mode to fix code styling.  
-`yarn tscov`:           Runs typescript types coverage report.
+`yarn tscov`:           Runs typescript types coverage report.  
 `yarn release`:		    Runs standard-version to bump version, and generate changelogs.  
 
