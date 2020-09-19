@@ -29,7 +29,7 @@ This application showcases:
 
 - Global state management and caching API calls for **Performance**, and **Scalability**.
 
-- Styling using [styled-components](https://styled-components.com/) & **Design-system** using [styled-system](https://styled-system.com/) for **Responsive** user interface.
+- Styling using [styled-components](https://styled-components.com/) & **Design-system** using [styled-system](https://styled-system.com/) allowing for theming support for a **Scalable** and **Responsive** user interface.
 
 - **Code splitting** and Dynamic loading based on page routes bundled into individual javascript chunk files to **Speed up initial load times** and improve **Performance** by building smaller bundle files sizes. 
 
