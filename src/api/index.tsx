@@ -9,7 +9,7 @@ export const WeatherCache = new QueryCache({
 	defaultConfig: {
 		queries: {
 			// Cache the query for 10 mins.
-			staleTime: 60 * 60 * 1000
+			staleTime: 10 * 60 * 1000
 		}
 	}
 });

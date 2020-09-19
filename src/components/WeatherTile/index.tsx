@@ -4,8 +4,8 @@ import { getResponsiveIconSrc } from '../../utils';
 import { Subtitle, CityName, Temperature, TemperatureWrap, TileStyled } from './styles';
 
 export interface WeatherTileProps {
-	cityName: string;
-	routeParam?: number | undefined;
+	routeParam: number | undefined;
+	cityName: string | undefined;
 	icon: string;
 	description: string;
 	iconType: string;

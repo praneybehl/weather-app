@@ -35,7 +35,7 @@ export interface Clouds {
 	all: number;
 }
 
-export interface List {
+export interface CityWeather {
 	coord: Coord;
 	sys: Sys;
 	weather: Weather[];
@@ -50,5 +50,5 @@ export interface List {
 
 export interface WeatherApiData {
 	cnt: number;
-	list: List[];
+	list: CityWeather[];
 }
