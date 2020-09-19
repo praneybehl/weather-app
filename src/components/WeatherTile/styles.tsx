@@ -7,7 +7,7 @@ export const TileStyled = styled(Link)`
 		color: inherit;
 		display: flex;
 		border-radius: 2px;
-		background: ${theme.colors.grey100};
+		background: ${theme.colors.grey200};
 		background: linear-gradient(
 			120deg,
 			${theme.colors.grey500} 0%,
@@ -54,7 +54,7 @@ export const LowHighTemp = styled(Subtitle)`
 	${({ theme }) => css`
 		padding-top: ${theme.space[2]}px;
 		${theme.mediaQueries.sm} {
-			padding-top: ${theme.space[4]}px;
+			padding-top: ${theme.space[3]}px;
 			font-size: ${({ theme }) => theme.fontSizes[2]};
 		}
 	`}
