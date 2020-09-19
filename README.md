@@ -9,7 +9,7 @@
 * [Deployment Site](#user-content-static-build-site)
 * [Tech Used](#user-content-tech-used)
 * [Testing](#user-content-testing)
-* [Interface Design](#user-interface-design)
+* [Interface Design](#user-content-interface-design)
 * [Installation and Prerequisites](#user-content-installation-and-prerequisites)
 * [Getting Started](#user-content-getting-started)
 * [Directory Structure](#user-content-directory-structure)
