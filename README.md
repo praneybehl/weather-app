@@ -138,46 +138,46 @@ Below you can find full details about significant files and folders.
 
 ```bass
 .
-├── public                                            // All public static assets go here.
-├── src                                               // All source code go here.
-│   ├── __mocks__                               // Jest mocks
-│   ├── api                                     // Api integration
+├── public                                // All public static assets go here.
+├── src                                   // All source code go here.
+│   ├── __mocks__                         // Jest mocks
+│   ├── api                               // Api integration
 │   │   ├── __tests__                     // API tests
 │   │   ├── index.tsx                     // API custom react-hooks, methods and state management
 │   │   └── types.ts                      // Types for api methods 
-│   ├── blocks                                  // All blocks are here
+│   ├── blocks                            // All blocks are here
 │   │   └── Header                        // Block directory
 │   │       ├── Header.spec.tsx           // Block specs and tests
 │   │       ├── index.tsx                 // Block component
 │   │       └── styles.tsx                // Block styles and styled-components
-│   ├── components                              // All components live here
+│   ├── components                        // All components live here
 │   │   ├── Container                     // Component directory
-│   │   │   ├── index.tsx           // Component logic and exports
-│   │   │   └── styles.tsx          // Component styles and styled-components
-│   ├── constants                               // All app constants can be found here
-│   ├── layouts                                 // Reusage layout templates are here
-│   ├── pages                                   // All pages live here
+│   │   │   ├── index.tsx           	  // Component logic and exports
+│   │   │   └── styles.tsx                // Component styles and styled-components
+│   ├── constants                         // All app constants can be found here
+│   ├── layouts                           // Reusage layout templates are here
+│   ├── pages                             // All pages live here
 │   │   └── Home                          // Page directory
 │   │       ├── index.tsx                 // Page component definition
 │   │       └── styles.tsx                // Page styles
-│   ├── routes                                  // Apllication routes
-│   ├── theme                                   // Application theme and design system lives here
+│   ├── routes                            // Apllication routes
+│   ├── theme                             // Application theme and design system lives here
 │   │   ├── global.ts                     // Global css styles and resets
 │   │   └── index.ts                      // App default theme 
-│   ├── typings                                 // Global typescript type definitions
-│   └── utils                                   // Resuable methods and utility functions 
-│       ├── __tests__                           // Tests for common utils
-│       ├── index.ts                            // Common utility methods
-│       └── test-utils.js                       // Jest and react-testing library setup and utilities
-│   ├── App.tsx                                 // Appilcation component
-│   ├── index.tsx                               // main entry file
-│   ├── setupTests.ts                           // Jest testing setup config
-├── .editorconfig                                   // Editor configuration
-├── .env-sample                                     // Environment variables
-├── .eslintignore                                   // Ignored eslint files and folders
-├── .eslintrc.json                                  // Eslint config
+│   ├── typings                           // Global typescript type definitions
+│   └── utils                             // Resuable methods and utility functions 
+│       ├── __tests__                     // Tests for common utils
+│       ├── index.ts                      // Common utility methods
+│       └── test-utils.js                 // Jest and react-testing library setup and utilities
+│   ├── App.tsx                           // Appilcation component
+│   ├── index.tsx                         // main entry file
+│   ├── setupTests.ts                     // Jest testing setup config
+├── .editorconfig                         // Editor configuration
+├── .env-sample                           // Environment variables
+├── .eslintignore                         // Ignored eslint files and folders
+├── .eslintrc.json                        // Eslint config
 ├── react-app-env.d.ts                              
-├── tsconfig.json                                   // Typescript config
+├── tsconfig.json                         // Typescript config
 └── yarn.lock
 
 ```
