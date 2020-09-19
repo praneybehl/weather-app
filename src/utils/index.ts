@@ -29,12 +29,12 @@ export function getNumberOrdinal(n: number) {
 /**
  * Return formatted current date eg. Saturday, September 19th
  */
-export function getFormattedDate(date: string | number | Date = '') {
-	const today = new Date(date);
+export function getFormattedDate() {
+	const today = new Date();
 	const day = DAYS_OF_WEEK[today.getDay()];
 	const month = MONTHS_OF_YEAR[today.getMonth()];
-	const newDate = today.getDate();
-	return `${day}, ${month} ${getNumberOrdinal(newDate)}`;
+	const date = today.getDate();
+	return `${day}, ${month} ${getNumberOrdinal(date)}`;
 }
 
 /**
