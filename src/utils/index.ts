@@ -10,8 +10,8 @@ import { CityDetailsProps } from '../blocks/CityDetails';
  */
 export function getResponsiveIconSrc(icon: string) {
 	return {
-		src1x: `http://openweathermap.org/img/wn/${icon}@2x.png`,
-		src2x: `http://openweathermap.org/img/wn/${icon}@4x.png`
+		src1x: `https://openweathermap.org/img/wn/${icon}@2x.png`,
+		src2x: `https://openweathermap.org/img/wn/${icon}@4x.png`
 	};
 }
 
