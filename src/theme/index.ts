@@ -23,11 +23,11 @@ const bodyBg = white;
 const bodyColor = grey900;
 
 // Responsive breakpoints and media-queries (mobile first).
-const breakpoints = [ '576px', '768px', '992px', '1200px'];
+const breakpoints = ['576px', '768px', '992px', '1200px'];
 
 const fonts = {
 	base: `'Montserrat', sans-serif`,
-	caveat: `'Caveat', cursive`,
+	caveat: `'Caveat', cursive`
 };
 
 const fontWeights = {
@@ -40,10 +40,7 @@ const fontWeights = {
 
 const headingFontFamily = fonts.base;
 
-const fontSizes = [
-	'1.2rem', '1.6rem', '2rem', '2.4rem',
-	'3.2rem', '4.8rem', '6.4rem', '9.2rem'
-];
+const fontSizes = ['1.2rem', '1.6rem', '2rem', '2.4rem', '3.2rem', '4.8rem', '6.4rem', '9.2rem'];
 
 const bodyText = fontSizes[1];
 const headingWeight = fontWeights.bold;
@@ -55,7 +52,7 @@ const theme = {
 		sm: `@media screen and (min-width: ${breakpoints[0]})`,
 		md: `@media screen and (min-width: ${breakpoints[1]})`,
 		lg: `@media screen and (min-width: ${breakpoints[2]})`,
-		xl: `@media screen and (min-width: ${breakpoints[3]})`,
+		xl: `@media screen and (min-width: ${breakpoints[3]})`
 	},
 	colors: {
 		primary,
@@ -77,11 +74,9 @@ const theme = {
 		black75,
 		bodyBg,
 		bodyColor,
-		error,
+		error
 	},
-	space: [
-		0, 4, 8, 16, 32, 64, 128, 256
-	],
+	space: [0, 4, 8, 16, 32, 64, 128, 256],
 	fonts,
 	fontSizes,
 	bodyText,
@@ -93,7 +88,7 @@ const theme = {
 		small: '0 0 4px rgba(0, 0, 0, .125)',
 		large: '0 0 24px rgba(0, 0, 0, .125)'
 	},
-	maxContainerWidth: '932px',
+	maxContainerWidth: '932px'
 };
 
 export default theme;

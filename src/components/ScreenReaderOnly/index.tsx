@@ -13,7 +13,7 @@ const ScreenReaderOnly = styled.a`
 
 	&:active,
 	&:focus {
-		color: ${({theme}) => theme.colors.bodyColor};
+		color: ${({ theme }) => theme.colors.bodyColor};
 		position: absolute;
 		width: auto;
 		height: auto;
@@ -24,8 +24,8 @@ const ScreenReaderOnly = styled.a`
 		padding: 1.2rem 0;
 		z-index: 9999;
 		align-self: center;
-    	outline-offset: 2px;
-    	margin-top: 1rem;
+		outline-offset: 2px;
+		margin-top: 1rem;
 	}
 `;
 

@@ -76,10 +76,10 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: inherit;
 	}
 	*:focus {
-		outline: 2px solid ${({theme}) => theme.colors.primary};
+		outline: 2px solid ${({ theme }) => theme.colors.primary};
 	}
 	*::selection {
-		background-color: ${({theme}) => theme.colors.primary};
+		background-color: ${({ theme }) => theme.colors.primary};
 		color: white;
 	}
 
@@ -94,9 +94,9 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	body {
-		background-color: ${props => props.theme.colors.bodyBg};
-		color: ${props => props.theme.colors.bodyColor};
-		font-size: ${props => props.theme.fontSizes[1]}
+		background-color: ${(props) => props.theme.colors.bodyBg};
+		color: ${(props) => props.theme.colors.bodyColor};
+		font-size: ${(props) => props.theme.fontSizes[1]}
 	}
 
 	/**
@@ -105,7 +105,7 @@ export const GlobalStyles = createGlobalStyle`
 	*/
 	html, body, input, select, optgroup, textarea, button {
 		font-weight: normal;
-		font-family: ${props => props.theme.fonts.base};
+		font-family: ${(props) => props.theme.fonts.base};
 		font-feature-settings: 'kern';
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -114,7 +114,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	pre, code {
-		font-family: ${props => props.theme.fonts.base};
+		font-family: ${(props) => props.theme.fonts.base};
 	}
 
 	/* montserrat-300 - latin */

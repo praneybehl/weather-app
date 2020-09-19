@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from "../../components/Container";
-import {FooterStyled, FooterText, LoveIcon} from "./styles";
+import Container from '../../components/Container';
+import { FooterStyled, FooterText, LoveIcon } from './styles';
 
 const Footer = () => {
 	const copyRightYear = new Date().getFullYear();
@@ -9,16 +9,18 @@ const Footer = () => {
 			<Container>
 				<FooterText>
 					Made with
-					<LoveIcon role="img" aria-label="love"> ❤ ️</LoveIcon>
+					<LoveIcon role="img" aria-label="love">
+						{' '}
+						❤ ️
+					</LoveIcon>
 					in Melbourne.
-					<br />
-					© {copyRightYear} Weather App. All rights reserved.
+					<br />© {copyRightYear} Weather App. All rights reserved.
 				</FooterText>
 			</Container>
 		</FooterStyled>
-	)
+	);
 };
 
-Footer.displayName = "Footer";
+Footer.displayName = 'Footer';
 
 export default Footer;
