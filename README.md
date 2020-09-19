@@ -9,6 +9,7 @@
 * [Deployment Site](#user-content-static-build-site)
 * [Tech Used](#user-content-tech-used)
 * [Testing](#user-content-testing)
+* [Interface Design](#user-interface-design)
 * [Installation and Prerequisites](#user-content-installation-and-prerequisites)
 * [Getting Started](#user-content-getting-started)
 * [Directory Structure](#user-content-directory-structure)
@@ -16,7 +17,7 @@
 * [NPM scripts dictionary ](#user-content-npm-scripts-dictionary)
 
 
-# Description
+## Description
 Weather app displays the current weather conditions of Australia’s major capital cities. 
 The weather data is retrieved from the [OpenWeather](https://openweathermap.org/current) API.
 
@@ -39,7 +40,7 @@ for delivering **Consistency** and **Reliability**.
 
 - **Continuous Integration and Deployment** using Netlify.
 
-# Deployment Site
+## Deployment Site
 The production deployment and Continuous Delivery is setup with Netlify.com.
 
 The live project site can be found at: [`https://weather-app-vic.netlify.app`](https://weather-app-vic.netlify.app).  
@@ -55,6 +56,16 @@ Axios, create-react-app, Eslint, Prettier, Git-hooks with Husky and Lint-staged.
 For testing, this project is setup with the following testing tools and libraries:
 
 `Unit tests: jest and @testing-library/react`
+
+## Interface Design
+The application has two page types:
+
+### 1 Home Page - displays current weather information for major Autralian Capital cities:
+![Home Page Screenshot](https://github.com/praneybehl/weather-app/raw/master/weather-app-vic-home-page-mockup.png)
+
+### 2 City Page - displays weather conditions and details for the selected city:
+![City Weather Detail Page Screenshot](https://github.com/praneybehl/weather-app/blob/master/weather-app-vic-city-detail-page-mockup.png)
+ 
 
 ## Installation and Prerequisites
 
