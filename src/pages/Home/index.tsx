@@ -4,7 +4,7 @@ import DefaultLayout from '../../layouts/default';
 import WeatherTile from '../../components/WeatherTile';
 import { useWeather } from '../../api';
 import Loader from '../../components/Loader';
-import { getFormattedDate, toSentenceCase } from '../../utils';
+import { getFormattedDate, parseCityWeatherProps } from '../../utils';
 import { PageContainerStyled, PageHeading, PageHeadingWrap, TodayDate } from './styles';
 import ErrorMessage from '../../components/ErrorMessage';
 
@@ -24,19 +24,10 @@ const HomePage: FC<HomePageProps> = ({ pageHeading = 'Weather - Australian capit
 				</PageHeadingWrap>
 				{isLoading && <Loader />}
 				{isError && <ErrorMessage>Error: {error.message}</ErrorMessage>}
-				{data?.list?.map((city, idx) => (
-					<WeatherTile
-						key={idx}
-						routeParam={city.id}
-						cityName={city.name}
-						icon={city.weather[0].icon}
-						iconType={city.weather[0].main}
-						description={toSentenceCase(city.weather[0].description)}
-						temperature={Math.round(city.main.temp)}
-						minTemp={Math.round(city.main.temp_min)}
-						maxTemp={Math.round(city.main.temp_max)}
-					/>
-				))}
+				{data?.list?.map((city, idx) => {
+					const cityDataProps = parseCityWeatherProps(city);
+					return <WeatherTile key={idx} {...cityDataProps} />;
+				})}
 			</PageContainerStyled>
 		</DefaultLayout>
 	);
