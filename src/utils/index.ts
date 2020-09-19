@@ -1,4 +1,7 @@
 import { DAYS_OF_WEEK, MONTHS_OF_YEAR } from '../constants';
+import { CityWeather } from '../api/types';
+import { WeatherTileProps } from '../components/WeatherTile';
+import { CityDetailsProps } from '../blocks/CityDetails';
 
 /**
  * Return responsive icon image source for open weather icon
@@ -41,4 +44,70 @@ export function getFormattedDate() {
  */
 export function toSentenceCase(str: string) {
 	return str.slice(0, 1).toUpperCase() + str.slice(1, str.length);
+}
+
+/**
+ * Parses and transforms CityDetails component props data from api data from store
+ * @param data {CityWeather} City weather data
+ */
+export function parseCityDetailsProps(data: CityWeather): CityDetailsProps {
+	const {
+		name,
+		clouds,
+		visibility,
+		sys: { country, sunrise, sunset },
+		wind: { speed: windSpeed, deg: windDegree },
+		main: {
+			temp: temperature,
+			feels_like: feelsLike,
+			humidity,
+			pressure,
+			temp_max: maxTemp,
+			temp_min: minTemp
+		}
+	} = data;
+	const { main: iconType, description, icon } = data.weather[0];
+
+	return {
+		country,
+		cityName: name,
+		sunrise,
+		sunset,
+		icon,
+		description: toSentenceCase(description),
+		iconType,
+		temperature: Math.round(temperature),
+		minTemp: Math.round(minTemp),
+		maxTemp: Math.round(maxTemp),
+		humidity,
+		pressure,
+		feelsLike,
+		visibility,
+		windSpeed,
+		windDegree,
+		clouds: clouds.all
+	};
+}
+
+/**
+ * Parses and transforms WeatherTile component props data from api data from store
+ * @param data {CityWeather} City weather data
+ */
+export function parseCityWeatherProps(data: CityWeather): WeatherTileProps {
+	const {
+		id,
+		name,
+		main: { temp: temperature, temp_max: maxTemp, temp_min: minTemp }
+	} = data;
+	const { main: iconType, description, icon } = data.weather[0];
+	return {
+		routeParam: id,
+		cityName: name,
+		icon,
+		iconType,
+		description: toSentenceCase(description),
+		temperature: Math.round(temperature),
+		minTemp: Math.round(minTemp),
+		maxTemp: Math.round(maxTemp)
+	};
 }

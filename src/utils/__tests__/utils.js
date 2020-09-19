@@ -1,4 +1,51 @@
-import { getResponsiveIconSrc, getNumberOrdinal, getFormattedDate, toSentenceCase } from '../index';
+import {
+	getResponsiveIconSrc,
+	getNumberOrdinal,
+	getFormattedDate,
+	toSentenceCase,
+	parseCityDetailsProps,
+	parseCityWeatherProps
+} from '../index';
+
+const sampleCityWeatherData = {
+	coord: {
+		lon: 151.21,
+		lat: -33.87
+	},
+	sys: {
+		country: 'AU',
+		timezone: 36000,
+		sunrise: 1600285909,
+		sunset: 1600328866
+	},
+	weather: [
+		{
+			id: 802,
+			main: 'Clouds',
+			description: 'scattered clouds',
+			icon: '03n'
+		}
+	],
+	main: {
+		temp: 16.3,
+		feels_like: 7.27,
+		temp_min: 15.56,
+		temp_max: 17,
+		pressure: 1026,
+		humidity: 77
+	},
+	visibility: 10000,
+	wind: {
+		speed: 13.9,
+		deg: 160
+	},
+	clouds: {
+		all: 40
+	},
+	dt: 1600337435,
+	id: 2147714,
+	name: 'Sydney'
+};
 
 describe('Utilities', () => {
 	describe('getResponsiveIconSrc()', () => {
@@ -28,6 +75,45 @@ describe('Utilities', () => {
 	describe('toSentenceCase()', () => {
 		it('should capitalise first letter of the string', () => {
 			expect(toSentenceCase('broken clouds')).toBe('Broken clouds');
+		});
+	});
+
+	describe('parseCityWeatherProps()', () => {
+		it('should parse correct CityDetails components props data from api data', () => {
+			expect(parseCityWeatherProps(sampleCityWeatherData)).toEqual({
+				cityName: 'Sydney',
+				description: 'Scattered clouds',
+				icon: '03n',
+				iconType: 'Clouds',
+				maxTemp: 17,
+				minTemp: 16,
+				routeParam: 2147714,
+				temperature: 16
+			});
+		});
+	});
+
+	describe('parseCityDetailsProps()', () => {
+		it('should parse correct WeatherTile components props data from api data', () => {
+			expect(parseCityDetailsProps(sampleCityWeatherData)).toEqual({
+				country: 'AU',
+				sunrise: 1600285909,
+				sunset: 1600328866,
+				pressure: 1026,
+				humidity: 77,
+				feelsLike: 7.27,
+				visibility: 10000,
+				windSpeed: 13.9,
+				windDegree: 160,
+				clouds: 40,
+				cityName: 'Sydney',
+				description: 'Scattered clouds',
+				icon: '03n',
+				iconType: 'Clouds',
+				maxTemp: 17,
+				minTemp: 16,
+				temperature: 16
+			});
 		});
 	});
 });
