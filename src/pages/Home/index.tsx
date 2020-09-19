@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { RouteComponentProps } from '@reach/router';
 import DefaultLayout from '../../layouts/default';
 import WeatherTile from '../../components/WeatherTile';
 import { useWeather } from '../../api';
@@ -7,10 +6,7 @@ import Loader from '../../components/Loader';
 import { getFormattedDate, parseCityWeatherProps } from '../../utils';
 import { PageContainerStyled, PageHeading, PageHeadingWrap, TodayDate } from './styles';
 import ErrorMessage from '../../components/ErrorMessage';
-
-export interface HomePageProps extends Partial<RouteComponentProps> {
-	pageHeading?: string | undefined;
-}
+import { HomePageProps } from './types';
 
 const HomePage: FC<HomePageProps> = ({ pageHeading = 'Weather - Australian capital cities' }) => {
 	const { isLoading, isError, data, error } = useWeather();

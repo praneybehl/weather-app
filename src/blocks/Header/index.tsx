@@ -1,12 +1,7 @@
 import React, { FC } from 'react';
 import Container from '../../components/Container';
 import { HeaderLogo, HeaderStyled } from './styles';
-
-export interface HeaderProps {
-	logoImgSrc?: string;
-	logoAltText?: string;
-	logoHref?: string;
-}
+import { HeaderProps } from './types';
 
 const Header: FC<HeaderProps> = ({
 	logoImgSrc = '/images/weather_app_logo.svg',

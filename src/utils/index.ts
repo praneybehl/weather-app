@@ -1,7 +1,7 @@
 import { DAYS_OF_WEEK, MONTHS_OF_YEAR } from '../constants';
 import { CityWeather } from '../api/types';
-import { WeatherTileProps } from '../components/WeatherTile';
-import { CityDetailsProps } from '../blocks/CityDetails';
+import { WeatherTileProps } from '../components/WeatherTile/types';
+import { CityDetailsProps } from '../blocks/CityDetails/types';
 
 /**
  * Return responsive icon image source for open weather icon

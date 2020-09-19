@@ -1,12 +1,10 @@
 import React, { FC } from 'react';
-import Header, { HeaderProps } from '../blocks/Header';
+import Header from '../blocks/Header';
 import Footer from '../blocks/Footer';
 import ScreenReaderOnly from '../components/ScreenReaderOnly';
 import { Main } from './styles';
+import { DefaultLayoutProps } from './types';
 
-export interface DefaultLayoutProps {
-	headerProps?: HeaderProps;
-}
 const DefaultLayout: FC<DefaultLayoutProps> = ({ headerProps, children }) => {
 	return (
 		<>

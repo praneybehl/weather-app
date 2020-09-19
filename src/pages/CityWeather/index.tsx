@@ -1,17 +1,12 @@
 import React, { FC } from 'react';
 import DefaultLayout from '../../layouts/default';
-import { RouteComponentProps } from '@reach/router';
 import { useWeather } from '../../api';
 import { PageHeading, PageHeadingWrap, TodayDate } from '../Home/styles';
 import { getFormattedDate, parseCityDetailsProps } from '../../utils';
 import Loader from '../../components/Loader';
 import CityDetails from '../../blocks/CityDetails';
 import { PageContainerStyled } from './styles';
-
-export interface CityPageProps extends Partial<RouteComponentProps> {
-	cityId?: string;
-	cityName?: string;
-}
+import { CityPageProps } from './types';
 
 const CityPage: FC<CityPageProps> = ({ cityId = '' }) => {
 	const { isLoading, isError, data, error } = useWeather();

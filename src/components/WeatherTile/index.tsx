@@ -2,25 +2,15 @@ import React, { FC } from 'react';
 import ResponsiveImage from '../ResponsiveImage';
 import { getResponsiveIconSrc } from '../../utils';
 import {
-	Subtitle,
 	CityName,
+	IconText,
+	LowHighTemp,
+	Subtitle,
 	Temperature,
 	TemperatureWrap,
-	TileStyled,
-	LowHighTemp,
-	IconText
+	TileStyled
 } from './styles';
-
-export interface WeatherTileProps {
-	routeParam: number | undefined;
-	cityName: string | undefined;
-	icon: string;
-	description: string;
-	iconType: string;
-	temperature: number;
-	minTemp: number;
-	maxTemp: number;
-}
+import { WeatherTileProps } from './types';
 
 // CurrencyTile component
 const WeatherTile: FC<WeatherTileProps> = ({
