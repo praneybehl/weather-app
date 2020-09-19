@@ -10,11 +10,14 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build && echo '/* /index.html 200' | cat >build/_redirects",
-		"test": "react-scripts test",
+		"test": "react-scripts test --watchAll=false",
+		"test:watch": "react-scripts test",
 		"type-check": "tsc --pretty --noEmit",
-		"test-all": "yarn lint && yarn type-check && yarn test",
+		"test-all": "yarn lint && yarn type-check && yarn tscov && yarn test",
 		"lint": "eslint . --ext ts --ext tsx --ext js",
 		"format": "prettier --write \"**/*.{js,ts,tsx}\"",
+		"tscov": "tscov --min-coverage 90",
+		"tscov:d": "tscov --details",
 		"release": "standard-version"
 	},
 	"husky": {
@@ -41,6 +44,7 @@
 		"styled-system": "^5.1.5"
 	},
 	"devDependencies": {
+		"@liftr/tscov": "^2.0.0",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/react-hooks": "^3.4.1",
