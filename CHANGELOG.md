@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/praneybehl/weather-app/compare/v0.1.0...v0.1.1) (2020-09-19)
+
+
+### Features
+
+* **components:** a new GotBackButton component to go back to home page ([30eba1c](https://github.com/praneybehl/weather-app/commit/30eba1c7b40e98f4c53f8ccf3d3842446091a840))
+
+
+### Bug Fixes
+
+* **tests:** fix a broken unit test for getFormattedDate utility ([06a572a](https://github.com/praneybehl/weather-app/commit/06a572a9a59c43049f4e8b6b4d5be53937cdfe22))
+* fix broken utility test ([526c55a](https://github.com/praneybehl/weather-app/commit/526c55a36ce046ae27e2289e6b4fe46e4cd80bff))
+
 ## 0.1.0 (2020-09-19)
 
 
