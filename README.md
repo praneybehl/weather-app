@@ -49,7 +49,7 @@ For branch based build previews follow the link above in the `nelify` build badg
 ## Tech used
 This project mainly relies on the following libraries:  
 Typescript, React, React-Hooks & React-Query(for state management), Styled-components & Styled-system(for React styling), 
-Axios, create-react-app, Eslint, Prettier, Git-hooks with Husky and Lint-staged.
+@reach/router, Axios, Jest, React-testing/library, create-react-app, Eslint, Prettier, Git-hooks with Husky and Lint-staged.
 
 
 ## Testing
