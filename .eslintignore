@@ -2,3 +2,7 @@ src/serviceWorker.ts
 src/**/__tests__/**
 src/**/*.spec.tsx
 src/**/*.d.ts
+build
+.idea
+public
+node_modules

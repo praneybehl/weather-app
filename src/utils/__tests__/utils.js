@@ -4,7 +4,8 @@ import {
 	getFormattedDate,
 	toSentenceCase,
 	parseCityDetailsProps,
-	parseCityWeatherProps
+	parseCityWeatherProps,
+	convertTimestamp
 } from '../index';
 
 const sampleCityWeatherData = {
@@ -97,23 +98,29 @@ describe('Utilities', () => {
 		it('should parse correct WeatherTile components props data from api data', () => {
 			expect(parseCityDetailsProps(sampleCityWeatherData)).toEqual({
 				country: 'AU',
-				sunrise: 1600285909,
-				sunset: 1600328866,
+				sunrise: '5:51 AM',
+				sunset: '5:47 PM',
 				pressure: 1026,
 				humidity: 77,
-				feelsLike: 7.27,
-				visibility: 10000,
+				feelsLike: 7,
+				visibility: 10,
 				windSpeed: 13.9,
-				windDegree: 160,
+				windDegree: 576,
 				clouds: 40,
 				cityName: 'Sydney',
-				description: 'Scattered clouds',
+				description: 'scattered clouds',
 				icon: '03n',
 				iconType: 'Clouds',
 				maxTemp: 17,
 				minTemp: 16,
 				temperature: 16
 			});
+		});
+	});
+
+	describe('convertTimestamp()', () => {
+		it('should return a formatted time from unix timestamp', () => {
+			expect(convertTimestamp(1600285909)).toBe('5:51 AM');
 		});
 	});
 });

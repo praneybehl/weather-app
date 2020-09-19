@@ -71,20 +71,20 @@ export function parseCityDetailsProps(data: CityWeather): CityDetailsProps {
 	return {
 		country,
 		cityName: name,
-		sunrise,
-		sunset,
+		sunrise: convertTimestamp(sunrise),
+		sunset: convertTimestamp(sunset),
 		icon,
-		description: toSentenceCase(description),
+		description,
 		iconType,
 		temperature: Math.round(temperature),
 		minTemp: Math.round(minTemp),
 		maxTemp: Math.round(maxTemp),
 		humidity,
 		pressure,
-		feelsLike,
-		visibility,
+		feelsLike: Math.round(feelsLike),
+		visibility: visibility / 1000, // m to km
 		windSpeed,
-		windDegree,
+		windDegree: windDegree * 3.6, // m/sec to km/hour
 		clouds: clouds.all
 	};
 }
@@ -110,4 +110,26 @@ export function parseCityWeatherProps(data: CityWeather): WeatherTileProps {
 		minTemp: Math.round(minTemp),
 		maxTemp: Math.round(maxTemp)
 	};
+}
+
+/**
+ * Returns a formatted time from unix timestamp
+ * @param timestamp {number}
+ */
+export function convertTimestamp(timestamp: number) {
+	const date = new Date(timestamp * 1000);
+	const hh = date.getHours();
+	let h = hh;
+	const min = ('0' + date.getMinutes()).slice(-2);
+	let ampm = 'AM';
+	if (hh > 12) {
+		h = hh - 12;
+		ampm = 'PM';
+	} else if (hh === 12) {
+		h = 12;
+		ampm = 'PM';
+	} else if (hh == 0) {
+		h = 12;
+	}
+	return h + ':' + min + ' ' + ampm;
 }
