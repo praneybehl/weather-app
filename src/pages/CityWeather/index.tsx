@@ -7,6 +7,7 @@ import Loader from '../../components/Loader';
 import CityDetails from '../../blocks/CityDetails';
 import { PageContainerStyled } from './styles';
 import { CityPageProps } from './types';
+import GoBackButton from '../../components/BackButton';
 
 const CityPage: FC<CityPageProps> = ({ cityId = '' }) => {
 	const { isLoading, isError, data, error } = useWeather();
@@ -17,6 +18,7 @@ const CityPage: FC<CityPageProps> = ({ cityId = '' }) => {
 	return (
 		<DefaultLayout>
 			<PageContainerStyled>
+				<GoBackButton />
 				<PageHeadingWrap>
 					<PageHeading>{headerTitle}</PageHeading>
 					<TodayDate>{date}</TodayDate>
