@@ -1,7 +1,7 @@
 # Weather App
 ![weather app logo](https://github.com/praneybehl/weather-app/raw/master/public/images/weather_app_logo.png)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/13f89cf1-2358-4604-9638-ca3765fa480c/deploy-status)](https://app.netlify.com/sites/weather-app-vic/deploys)
-
+[![tscov](https://img.shields.io/badge/dynamic/json.svg?label=tscov&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.minCoverage&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjeroenouw%2Fliftr-tscov%2Fmaster%2Fpackage.json)](https://github.com/jeroenouw/liftr-tscov)
 
 ## Table of Contents
 
@@ -33,12 +33,12 @@ This application showcases:
 
 - **Code splitting** and Dynamic loading based on page routes bundled into individual javascript chunk files to **Speed up initial load times** and improve **Performance** by building smaller bundle files sizes. 
 
-- Use of Typescript for strong & static type checking, unit tests, es-lint, prettier and git-commit hook with [Husky](https://github.com/typicode/husky) 
+- Use of Typescript for strong & static type checking, unit tests, es-lint, prettier and git-commit hooks with [Husky](https://github.com/typicode/husky) 
 for delivering **Consistency** and **Reliability**.
 
 - Conventional-Commit messages to improve **Readability** of commit message and **Automatic Changelogs Generation** for semantic versioning and Release notes. See [CHANGELOG.md](https://github.com/praneybehl/weather-app/blob/master/CHANGELOG.md) for sample.
 
-- **Continuous Integration and Deployment** using Netlify.
+- **Continuous Integration and Deployment** using [Netlify](https://www.netlify.com).
 
 ## Deployment Site
 The production deployment and Continuous Delivery is setup with Netlify.com.
@@ -56,6 +56,8 @@ Typescript, React, React-Hooks & React-Query(for state management), Styled-compo
 For testing, this project is setup with the following testing tools and libraries:
 
 `Unit tests: jest and @testing-library/react`
+`Typescript types coverage: tscov -> 90%+ coverage`
+`Linting: tslint`
 
 ## Interface Design
 The application has two page types:
@@ -194,9 +196,11 @@ specification for adding human and machine readable meaning to commit messages.
 `yarn start`:			Start local development server.  
 `yarn build`:			Creates a production build.   
 `yarn test`:			Runs unit tests.  
+`yarn test:watch`:	    Runs unit tests in watch/development mode.  
 `yarn type-check`:		Runs typescript type checking.  
 `yarn test-all`:		Runs linting, type checks and unit tests.  
 `yarn lint`:	        Runs eslint.   
 `yarn format`:		    Runs Prettier in 'write' mode to fix code styling.  
+`yarn tscov`:           Runs typescript types coverage report.
 `yarn release`:		    Runs standard-version to bump version, and generate changelogs.  
 
