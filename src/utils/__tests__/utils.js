@@ -96,24 +96,28 @@ describe('Utilities', () => {
 
 	describe('parseCityDetailsProps()', () => {
 		it('should parse correct WeatherTile components props data from api data', () => {
+			console.log(
+				'arseCityDetailsProps(sampleCityWeatherData) ---->',
+				parseCityDetailsProps(sampleCityWeatherData)
+			);
 			expect(parseCityDetailsProps(sampleCityWeatherData)).toEqual({
 				country: 'AU',
+				cityName: 'Sydney',
 				sunrise: '5:51 AM',
 				sunset: '5:47 PM',
-				pressure: 1026,
+				icon: '03n',
+				description: 'scattered clouds',
+				iconType: 'Clouds',
+				temperature: 16,
+				minTemp: 16,
+				maxTemp: 17,
 				humidity: 77,
+				pressure: 1026,
 				feelsLike: 7,
 				visibility: 10,
 				windSpeed: 13.9,
 				windDegree: 576,
-				clouds: 40,
-				cityName: 'Sydney',
-				description: 'scattered clouds',
-				icon: '03n',
-				iconType: 'Clouds',
-				maxTemp: 17,
-				minTemp: 16,
-				temperature: 16
+				clouds: 40
 			});
 		});
 	});

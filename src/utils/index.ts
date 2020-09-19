@@ -118,18 +118,11 @@ export function parseCityWeatherProps(data: CityWeather): WeatherTileProps {
  */
 export function convertTimestamp(timestamp: number) {
 	const date = new Date(timestamp * 1000);
-	const hh = date.getHours();
-	let h = hh;
-	const min = ('0' + date.getMinutes()).slice(-2);
-	let ampm = 'AM';
-	if (hh > 12) {
-		h = hh - 12;
-		ampm = 'PM';
-	} else if (hh === 12) {
-		h = 12;
-		ampm = 'PM';
-	} else if (hh == 0) {
-		h = 12;
-	}
-	return h + ':' + min + ' ' + ampm;
+	let hours = date.getHours();
+	const minutes = date.getMinutes();
+	const ampm = hours >= 12 ? 'PM' : 'AM';
+	hours = hours % 12;
+	hours = hours ? hours : 12;
+	const minutesPrefix = minutes < 10 ? '0' + minutes : minutes;
+	return hours + ':' + minutesPrefix + ' ' + ampm;
 }
