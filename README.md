@@ -29,14 +29,14 @@ This application showcases:
 
 - Global state management and caching API calls for **Performance**, and **Scalability**.
 
-- Styling using [styled-components](https://styled-components.com/) & design-system using [styled-system](https://styled-system.com/) for Responsive user interface 
+- Styling using [styled-components](https://styled-components.com/) & design-system using [styled-system](https://styled-system.com/) for **Responsive** user interface.
 
 - **Code splitting** and Dynamic loading based on page routes bundled into individual javascript chunk files to **Speed up initial load times** and improve **Performance** by building smaller bundle files sizes. 
 
 - Use of Typescript for strong & static type checking, unit tests, es-lint, prettier and git-commit hook with [Husky](https://github.com/typicode/husky) 
 for delivering **Consistency** and **Reliability**.
 
-- Conventional-Commit messages to improve **Readability** of commit message and **Automatic Changelogs Generation** for semantic versioning and Release notes. See **CHANGELOG.md** for sample.
+- Conventional-Commit messages to improve **Readability** of commit message and **Automatic Changelogs Generation** for semantic versioning and Release notes. See [CHANGELOG.md](https://github.com/praneybehl/weather-app/blob/master/CHANGELOG.md) for sample.
 
 - **Continuous Integration and Deployment** using Netlify.
 
@@ -63,6 +63,8 @@ The application has two page types:
 ### 1. Home Page - displays current weather information for major Autralian Capital cities:
 ![Home Page Screenshot](https://github.com/praneybehl/weather-app/raw/master/weather-app-vic-home-page-mockup.png)
 
+Clicking on the City Weather Box opens the city's detailed weather conditions page.
+
 ### 2. City Page - displays weather conditions and details for the selected city:
 ![City Weather Detail Page Screenshot](https://github.com/praneybehl/weather-app/blob/master/weather-app-vic-city-detail-page-mockup.png)
  
@@ -88,7 +90,7 @@ $ git clone https://github.com/praneybehl/weather-app
 $ cd weather-app
 ```
 
-2. Important! Setup environment variables.
+2. **Important!** Setup environment variables.
 ```bash
  - Create a copy of the file '.env-sample' and name it '.env' in the same directory.
  - Replace the content <REPLACE_THIS_WITH_YOUR_OPEN_WEATHER_API_KEY> with your OpenWeather API Key or check email for a sample key provided.
@@ -129,7 +131,7 @@ $ npm run test
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The the structure of the project is set to follow the hierarchy:
 
-`app <- pages <- blocks  <- components`.
+`App <- Pages <- Blocks  <- Components`.
 
 The project doesn't make use of any css frameworks, just the simple resets.
 The rest of the folders and files only exist to make your life easier, and should not need to be changed.
@@ -183,8 +185,8 @@ Below you can find full details about significant files and folders.
 ```
 
 ## Version Control
-This project is git version control along with [Conventional Commits](https://www.conventionalcommits.org/) 
-specification for adding human and machine readable meaning to commit messages and .
+This project is git version controlled along with [Conventional Commits](https://www.conventionalcommits.org/) 
+specification for adding human and machine readable meaning to commit messages.
 
 
 ## NPM scripts dictionary
