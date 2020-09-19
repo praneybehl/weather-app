@@ -54,8 +54,8 @@ describe('Utilities', () => {
 			const iconCode = '04d';
 			const resProps = getResponsiveIconSrc(iconCode);
 			expect(resProps).toEqual({
-				src1x: `http://openweathermap.org/img/wn/${iconCode}@2x.png`,
-				src2x: `http://openweathermap.org/img/wn/${iconCode}@4x.png`
+				src1x: `https://openweathermap.org/img/wn/${iconCode}@2x.png`,
+				src2x: `https://openweathermap.org/img/wn/${iconCode}@4x.png`
 			});
 		});
 	});
