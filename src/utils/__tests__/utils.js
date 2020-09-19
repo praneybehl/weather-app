@@ -1,0 +1,33 @@
+import { getResponsiveIconSrc, getNumberOrdinal, getFormattedDate, toSentenceCase } from '../index';
+
+describe('Utilities', () => {
+	describe('getResponsiveIconSrc()', () => {
+		it('should return props for responsive image based on open weather icon', () => {
+			const iconCode = '04d';
+			const resProps = getResponsiveIconSrc(iconCode);
+			expect(resProps).toEqual({
+				src1x: `http://openweathermap.org/img/wn/${iconCode}@2x.png`,
+				src2x: `http://openweathermap.org/img/wn/${iconCode}@4x.png`
+			});
+		});
+	});
+
+	describe('getNumberOrdinal()', () => {
+		it('should return an ordinal of number', () => {
+			expect(getNumberOrdinal(23)).toBe('23rd');
+		});
+	});
+
+	describe('getFormattedDate()', () => {
+		it('should return formatted current date', () => {
+			const date = new Date('09/19/2020');
+			expect(getFormattedDate(date)).toBe('Saturday, September 19th');
+		});
+	});
+
+	describe('toSentenceCase()', () => {
+		it('should capitalise first letter of the string', () => {
+			expect(toSentenceCase('broken clouds')).toBe('Broken clouds');
+		});
+	});
+});
