@@ -36,7 +36,7 @@ This application showcases:
 - Use of Typescript for strong & static type checking, unit tests, es-lint, prettier and git-commit hooks with [Husky](https://github.com/typicode/husky) 
 for delivering **Consistency** and **Reliability**.
 
-- Conventional-Commit messages to improve **Readability** of commit message and **Automatic Changelogs Generation** for semantic versioning and Release notes. See [CHANGELOG.md](https://github.com/praneybehl/weather-app/blob/master/CHANGELOG.md) for sample.
+- Conventional-Commit messages to improve **Readability** of commit message and **Automatic Changelogs Generation** for semantic versioning and Release notes. See [CHANGELOG.md](https://github.com/praneybehl/weather-app/blob/master/CHANGELOG.md) for details.
 
 - **Continuous Integration and Deployment** using [Netlify](https://www.netlify.com).
 
