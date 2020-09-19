@@ -52,9 +52,10 @@ export const Subtitle = styled.div`
 
 export const LowHighTemp = styled(Subtitle)`
 	${({ theme }) => css`
-		padding-top: ${theme.space[1]}px;
+		padding-top: ${theme.space[2]}px;
 		${theme.mediaQueries.sm} {
-			padding-top: ${theme.space[2]}px;
+			padding-top: ${theme.space[4]}px;
+			font-size: ${({ theme }) => theme.fontSizes[2]};
 		}
 	`}
 `;
