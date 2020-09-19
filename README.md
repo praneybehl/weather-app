@@ -25,11 +25,11 @@ This application showcases:
 
 - Minimalistic, Clean and Intuitive design with an strong focus on accessibility and good color contrast ratio.
 
-- It follows **Best coding standards**, strict code organisation practices to improve **Maintainability**
+- It follows **Best coding standards**, strict code organisation practices to improve **Maintainability**.
 
 - Global state management and caching API calls for **Performance**, and **Scalability**.
 
-- Styling using [styled-components](https://styled-components.com/) & design-system using [styled-system](https://styled-system.com/) for **Responsive** user interface.
+- Styling using [styled-components](https://styled-components.com/) & **Design-system** using [styled-system](https://styled-system.com/) for **Responsive** user interface.
 
 - **Code splitting** and Dynamic loading based on page routes bundled into individual javascript chunk files to **Speed up initial load times** and improve **Performance** by building smaller bundle files sizes. 
 
@@ -84,7 +84,7 @@ Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ## Getting started
 
-1. Clone this repo 
+1. Clone this repo.
 ```bash
 $ git clone https://github.com/praneybehl/weather-app
 $ cd weather-app
@@ -96,7 +96,7 @@ $ cd weather-app
  - Replace the content <REPLACE_THIS_WITH_YOUR_OPEN_WEATHER_API_KEY> with your OpenWeather API Key or check email for a sample key provided.
 ```
 
-3. NPM scripts dictionary Install Dependencies
+3. NPM scripts dictionary Install Dependencies.
 ```bash
 $ yarn
 or if using npm:
