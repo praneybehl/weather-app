@@ -21,6 +21,7 @@ const ThemeSwitcher: React.FC = () => {
 						alt="Switch to light theme"
 						src1x="/images/icons/moon.png"
 						src2x="/images/icons/moon@2x.png"
+						title="Switch to light theme"
 					/>
 				)}
 				{mode === modes[1] && (
@@ -29,6 +30,7 @@ const ThemeSwitcher: React.FC = () => {
 						alt="Switch to dark theme"
 						src1x="/images/icons/sun.png"
 						src2x="/images/icons/sun@2x.png"
+						title="Switch to dark theme"
 					/>
 				)}
 			</ThemeSwitcherStyled>

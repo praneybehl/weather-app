@@ -4,4 +4,5 @@ export interface ResponsiveImageProps extends Partial<LayoutProps>, Partial<Spac
 	src1x: string;
 	src2x: string;
 	alt?: string | undefined;
+	[key: string]: any;
 }
