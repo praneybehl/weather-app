@@ -40,7 +40,7 @@ for delivering **Consistency** and **Reliability**.
 
 - **Continuous Integration and Deployment** using [Netlify](https://www.netlify.com).
 
-- **Dark Mode** - Showcase theming capabilities and enable dark mode. Switch between theme mode by clicking ![Dark mode](https://github.com/praneybehl/weather-app/raw/master/public/images/icons/moon.png) or ![Light mode](https://github.com/praneybehl/weather-app/raw/master/public/images/icons/sun.png).
+- **Dark Mode** - Showcase theming capabilities and enable dark mode. Switch between theme mode by clicking ![Dark mode](https://github.com/praneybehl/weather-app/raw/master/public/images/icons/moon.png) or ![Light mode](https://github.com/praneybehl/weather-app/raw/master/public/images/icons/sun.png) button.
 
 ## Deployment Site
 The production deployment and Continuous Delivery is setup with Netlify.com.
