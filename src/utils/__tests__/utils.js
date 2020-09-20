@@ -96,10 +96,6 @@ describe('Utilities', () => {
 
 	describe('parseCityDetailsProps()', () => {
 		it('should parse correct WeatherTile components props data from api data', () => {
-			console.log(
-				'arseCityDetailsProps(sampleCityWeatherData) ---->',
-				parseCityDetailsProps(sampleCityWeatherData)
-			);
 			expect(parseCityDetailsProps(sampleCityWeatherData)).toEqual({
 				country: 'AU',
 				cityName: 'Sydney',
@@ -116,7 +112,7 @@ describe('Utilities', () => {
 				feelsLike: 7,
 				visibility: 10,
 				windSpeed: 13.9,
-				windDegree: 576,
+				windDegree: 160,
 				clouds: 40
 			});
 		});

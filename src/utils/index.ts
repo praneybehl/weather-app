@@ -83,8 +83,8 @@ export function parseCityDetailsProps(data: CityWeather): CityDetailsProps {
 		pressure,
 		feelsLike: Math.round(feelsLike),
 		visibility: visibility / 1000, // m to km
-		windSpeed,
-		windDegree: windDegree * 3.6, // m/sec to km/hour
+		windSpeed, // m/sec to km/hour,
+		windDegree,
 		clouds: clouds.all
 	};
 }
