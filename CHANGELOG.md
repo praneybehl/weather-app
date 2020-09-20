@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/praneybehl/weather-app/compare/v0.1.1...v0.1.2) (2020-09-20)
+
+
+### Features
+
+* **ci:** setup github actions for seamlessly running test on push ([0930d59](https://github.com/praneybehl/weather-app/commit/0930d5963ce9d9349093c75fd070966661e37876))
+* **components:** add new ThemeSwitcher component ([f182570](https://github.com/praneybehl/weather-app/commit/f1825707af790030548c84c3264ec481f88d8f15))
+* **dark mode:** add new custom hook useThemeSwitcher for dark mode ([f0fd55a](https://github.com/praneybehl/weather-app/commit/f0fd55a7edb6725c9d06f61d281efd1408da40d9))
+
+
+### Bug Fixes
+
+* responsive style for GoBackButton component ([ae954af](https://github.com/praneybehl/weather-app/commit/ae954af5b901ba8fd767e806aad27b2f000fef10))
+* **pages:** fix updated date format ([1e9516d](https://github.com/praneybehl/weather-app/commit/1e9516d3d5c171ebd9b443713bd64d3755967711))
+* utils tests and speed conversion ([7950d31](https://github.com/praneybehl/weather-app/commit/7950d31e8ee89c44cc8efc1d2978df4470d70284))
+
 ### [0.1.1](https://github.com/praneybehl/weather-app/compare/v0.1.0...v0.1.1) (2020-09-19)
 
 
