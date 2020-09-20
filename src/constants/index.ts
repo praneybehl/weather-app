@@ -40,3 +40,5 @@ export const MONTHS_OF_YEAR = [
 	'November',
 	'December'
 ];
+
+export const IMAGES_DIRECTORY = '/images/';
