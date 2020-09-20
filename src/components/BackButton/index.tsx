@@ -7,7 +7,7 @@ const GoBackButton: FC = () => {
 		<>
 			<GoBackStyled to={'/'} role="navigation" aria-label={`Go back to home pager`}>
 				<ResponsiveImage
-					size={20}
+					size={[15, 15, 20]}
 					mr={2}
 					src1x={'/images/icons/left-arrow.png'}
 					src2x={'/images/icons/left-arrow@2x.png'}
