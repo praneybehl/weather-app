@@ -15,8 +15,11 @@ import {
 import ResponsiveImage from '../../components/ResponsiveImage';
 import { getResponsiveIconSrc } from '../../utils';
 import { CityDetailsProps } from './types';
+import { useThemeSwitcher } from '../../theme/useThemeSwitcher';
 
 const CityDetails: FC<CityDetailsProps> = (props) => {
+	const { mode } = useThemeSwitcher();
+	const imagesDirectory = `/images/${mode === 'dark' ? 'dark/' : ''}icons/`;
 	return (
 		<CityDetailsStyled>
 			<HighlightBox>
@@ -42,8 +45,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 						size={25}
 						mr={1}
 						ml={-1}
-						src1x="/images/icons/pin.png"
-						src2x="/images/icons/pin@2x.png"
+						src1x={`${imagesDirectory}pin.png`}
+						src2x={`${imagesDirectory}pin@2x.png`}
 					/>
 					{props.cityName}, {props.country}
 				</CityName>
@@ -56,8 +59,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/sunrise.png"
-							src2x="/images/icons/sunrise@2x.png"
+							src1x={`${imagesDirectory}sunrise.png`}
+							src2x={`${imagesDirectory}sunrise@2x.png`}
 						/>
 						<DetailItemValue>{props.sunrise}</DetailItemValue>
 					</DetailItemBox>
@@ -67,8 +70,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/sunset.png"
-							src2x="/images/icons/sunset@2x.png"
+							src1x={`${imagesDirectory}sunset.png`}
+							src2x={`${imagesDirectory}sunset@2x.png`}
 						/>
 						<DetailItemValue>{props.sunset}</DetailItemValue>
 					</DetailItemBox>
@@ -78,8 +81,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/cloud.png"
-							src2x="/images/icons/cloud@2x.png"
+							src1x={`${imagesDirectory}cloud.png`}
+							src2x={`${imagesDirectory}cloud@2x.png`}
 						/>
 						<DetailItemValue>{props.clouds}%</DetailItemValue>
 					</DetailItemBox>
@@ -91,8 +94,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/pressure.png"
-							src2x="/images/icons/pressure@2x.png"
+							src1x={`${imagesDirectory}pressure.png`}
+							src2x={`${imagesDirectory}pressure@2x.png`}
 						/>
 						<DetailItemValue>{props.pressure}hPa</DetailItemValue>
 					</DetailItemBox>
@@ -102,8 +105,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/visibility.png"
-							src2x="/images/icons/visibility@2x.png"
+							src1x={`${imagesDirectory}visibility.png`}
+							src2x={`${imagesDirectory}visibility@2x.png`}
 						/>
 						<DetailItemValue>{props.visibility}km</DetailItemValue>
 					</DetailItemBox>
@@ -113,8 +116,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/humidity.png"
-							src2x="/images/icons/humidity@2x.png"
+							src1x={`${imagesDirectory}humidity.png`}
+							src2x={`${imagesDirectory}humidity@2x.png`}
 						/>
 						<DetailItemValue>{props.humidity}%</DetailItemValue>
 					</DetailItemBox>
@@ -126,8 +129,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/windSpeed.png"
-							src2x="/images/icons/windSpeed@2x.png"
+							src1x={`${imagesDirectory}windSpeed.png`}
+							src2x={`${imagesDirectory}windSpeed@2x.png`}
 						/>
 						<DetailItemValue>{props.windSpeed}m/sec</DetailItemValue>
 					</DetailItemBox>
@@ -137,8 +140,8 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							size={[35, 70]}
 							mr={1}
 							ml={-1}
-							src1x="/images/icons/windDegree.png"
-							src2x="/images/icons/windDegree@2x.png"
+							src1x={`${imagesDirectory}windDegree.png`}
+							src2x={`${imagesDirectory}windDegree@2x.png`}
 						/>
 						<DetailItemValue>{props.windDegree}deg</DetailItemValue>
 					</DetailItemBox>
