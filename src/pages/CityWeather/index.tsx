@@ -11,7 +11,7 @@ import GoBackButton from '../../components/BackButton';
 
 const CityPage: FC<CityPageProps> = ({ cityId = '' }) => {
 	const { isLoading, isError, data, error } = useWeather();
-	const date = getFormattedDate();
+	const date = getFormattedDate(new Date());
 	const headerTitle = `Weather details`;
 	const cityData = data?.list?.find((city) => city.id === parseInt(cityId));
 	const cityDetailProps = cityData && parseCityDetailsProps(cityData);

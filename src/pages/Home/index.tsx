@@ -10,7 +10,7 @@ import { HomePageProps } from './types';
 
 const HomePage: FC<HomePageProps> = ({ pageHeading = 'Weather - Australian capital cities' }) => {
 	const { isLoading, isError, data, error } = useWeather();
-	const date = getFormattedDate();
+	const date = getFormattedDate(new Date());
 	return (
 		<DefaultLayout>
 			<PageContainerStyled>
