@@ -8,11 +8,11 @@ export const GoBackStyled = styled(Link)`
 		color: ${theme.colors.black};
 		font-size: ${theme.fontSizes[1]};
 		margin-bottom: ${theme.space[1]};
-		text-decoration: none;
+		text-decoration: underline;
 		&:hover,
 		&:focus {
 			color: ${theme.colors.black};
-			text-decoration: underline;
+			text-decoration: none;
 		}
 		&:visited {
 			color: ${theme.colors.black};

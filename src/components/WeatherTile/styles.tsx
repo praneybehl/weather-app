@@ -83,6 +83,7 @@ export const CityName = styled.h2`
 		color: ${theme.colors.bodyColor};
 		font-size: ${theme.fontSizes[2]};
 		font-weight: ${theme.fontWeights.bold};
+		text-decoration: underline;
 		${theme.mediaQueries.md} {
 			font-size: ${theme.fontSizes[4]};
 		}

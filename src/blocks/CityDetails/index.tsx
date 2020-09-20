@@ -129,7 +129,7 @@ const CityDetails: FC<CityDetailsProps> = (props) => {
 							src1x="/images/icons/windSpeed.png"
 							src2x="/images/icons/windSpeed@2x.png"
 						/>
-						<DetailItemValue>{props.windSpeed}km/hr</DetailItemValue>
+						<DetailItemValue>{props.windSpeed}m/sec</DetailItemValue>
 					</DetailItemBox>
 					<DetailItemBox>
 						<DetailItemTitle>Wind Direction</DetailItemTitle>
