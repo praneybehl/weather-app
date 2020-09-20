@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
+import React, { useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './theme/global';
 import ScreenReaderOnly from './components/ScreenReaderOnly';
 import AppRoutes from './routes';
+import { getTheme, modes, ThemeSwitcherContext } from './theme/useThemeSwitcher';
 
 const AppStyled = styled.div`
 	display: flex;
@@ -13,14 +12,17 @@ const AppStyled = styled.div`
 `;
 
 const App = () => {
+	const [mode, setMode] = useState(modes[0]);
 	return (
-		<ThemeProvider theme={theme}>
-			<AppStyled>
-				<ScreenReaderOnly href="#mainContent">Skip to main content</ScreenReaderOnly>
-				<AppRoutes />
-				<GlobalStyles />
-			</AppStyled>
-		</ThemeProvider>
+		<ThemeSwitcherContext.Provider value={{ mode, setMode }}>
+			<ThemeProvider theme={getTheme(mode)}>
+				<AppStyled>
+					<ScreenReaderOnly href="#mainContent">Skip to main content</ScreenReaderOnly>
+					<AppRoutes />
+					<GlobalStyles />
+				</AppStyled>
+			</ThemeProvider>
+		</ThemeSwitcherContext.Provider>
 	);
 };
 
