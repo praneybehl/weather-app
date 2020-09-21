@@ -7,12 +7,12 @@ export const TileStyled = styled(Link)`
 		color: inherit;
 		display: flex;
 		border-radius: 2px;
-		background: ${theme.colors.grey200};
+		background: ${theme.colors.grey50};
 		background: linear-gradient(
 			120deg,
-			${theme.colors.grey500} 0%,
-			${theme.colors.grey200} 25%,
-			${theme.colors.grey200} 100%
+			${theme.colors.grey400} 0%,
+			${theme.colors.grey50} 25%,
+			${theme.colors.grey50} 100%
 		);
 		border: ${`2px solid ${theme.colors.grey200}`};
 		justify-content: space-between;
