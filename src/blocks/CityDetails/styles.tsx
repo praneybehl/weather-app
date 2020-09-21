@@ -14,13 +14,8 @@ export const HighlightBox = styled.section`
 		display: flex;
 		flex-direction: column;
 		border-radius: 2px;
-		background: ${theme.colors.grey200};
-		background: linear-gradient(
-			300deg,
-			${theme.colors.grey500} 0%,
-			${theme.colors.grey200} 55%,
-			${theme.colors.grey200} 100%
-		);
+		background: ${theme.colors.white};
+		border: ${`2px solid ${theme.colors.grey200}`};
 		padding: ${theme.space[3]}px ${theme.space[4]}px;
 		${theme.mediaQueries.md} {
 			padding: ${theme.space[4]}px ${theme.space[5]}px;
@@ -76,7 +71,6 @@ export const WeatherContainer = styled.div`
 
 export const WeatherContainerWrap = styled.div`
 	${({ theme }) => css`
-		padding: 0 ${theme.space[2]}px;
 		${theme.mediaQueries.md} {
 			font-size: ${theme.fontSizes[3]};
 		}

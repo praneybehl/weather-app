@@ -7,13 +7,7 @@ export const TileStyled = styled(Link)`
 		color: inherit;
 		display: flex;
 		border-radius: 2px;
-		background: ${theme.colors.grey50};
-		background: linear-gradient(
-			120deg,
-			${theme.colors.grey400} 0%,
-			${theme.colors.grey50} 25%,
-			${theme.colors.grey50} 100%
-		);
+		background: ${theme.colors.white};
 		border: ${`2px solid ${theme.colors.grey200}`};
 		justify-content: space-between;
 		align-items: center;
@@ -25,8 +19,8 @@ export const TileStyled = styled(Link)`
 		transition: all 0.3s ease;
 		&:focus,
 		&:hover {
-			border-color: ${theme.colors.black};
-			background: ${theme.colors.grey300};
+			border-color: ${theme.colors.grey600};
+			background: ${theme.colors.white};
 		}
 		${theme.mediaQueries.md} {
 			padding: 3.2rem 4.8rem;
