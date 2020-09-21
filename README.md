@@ -57,9 +57,9 @@ Typescript, React, React-Hooks & React-Query(for state management), Styled-compo
 ## Testing
 For testing, this project is setup with the following testing tools and libraries:
 
-`Unit tests: jest and @testing-library/react`
-`Typescript types coverage: tscov -> 90%+ coverage`
-`Linting: tslint`
+`Unit tests: jest and @testing-library/react`. 
+`Typescript types coverage: tscov -> 90%+ coverage`. 
+`Linting: eslint with typescript support`
 
 ## Interface Design
 The application has two page types:
