@@ -2,6 +2,7 @@
 ![weather app logo](https://github.com/praneybehl/weather-app/raw/master/public/images/weather_app_logo.png)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/13f89cf1-2358-4604-9638-ca3765fa480c/deploy-status)](https://app.netlify.com/sites/weather-app-vic/deploys)
 [![tscov](https://img.shields.io/badge/dynamic/json.svg?label=tscov&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.minCoverage&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjeroenouw%2Fliftr-tscov%2Fmaster%2Fpackage.json)](https://github.com/jeroenouw/liftr-tscov)
+[![DeepScan grade](https://deepscan.io/api/teams/11223/projects/14156/branches/256059/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11223&pid=14156&bid=256059)
 
 ## Table of Contents
 
