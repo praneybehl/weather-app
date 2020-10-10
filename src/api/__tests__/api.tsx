@@ -1,6 +1,5 @@
-import React from 'react';
 import axios from 'axios';
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react-hooks';
 import { useWeather } from '../index';
 import { WEATHER_API_ENDPOINT, MAJOR_CITY_CODES, OPEN_WEATHER_API_KEY } from '../../constants';
 import weatherData from './weatherData.json';

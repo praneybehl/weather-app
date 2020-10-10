@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components/macro';
-import theme from '../theme';
 import { getTheme, modes, ThemeSwitcherContext } from '../theme/useThemeSwitcher';
 
 const AllTheProviders = ({ children }) => {
