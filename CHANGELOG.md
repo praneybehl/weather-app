@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/praneybehl/weather-app/compare/v0.1.2...v0.1.3) (2020-10-10)
+
+
+### Bug Fixes
+
+* remove used imports ([30bdcd6](https://github.com/praneybehl/weather-app/commit/30bdcd60650e4ce09dda70a8f8ec4f4d7cb2fb67))
+
 ### [0.1.2](https://github.com/praneybehl/weather-app/compare/v0.1.1...v0.1.2) (2020-09-20)
 
 
